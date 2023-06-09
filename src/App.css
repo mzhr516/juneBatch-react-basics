@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+.navBar{
+  background-color: green;
+  width: 100%;
+  height: 10vh;
+}
+.carasol{
+  background-color: #61dafb;
+  width: 100%;
+  height: 30vh;
+}
+.body{
+  background-color: blue;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+}
+
+.footer{
+  background-color: brown;
+  width: 100%;
+  height: 30vh;
+}
+
+.leftBody{
+  width: 50%;
+  background-color:yellow ;
+}
+
+.rightBody{
+  width: 50%;
+  background-color: tomato;
+}

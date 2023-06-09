@@ -69,3 +69,12 @@
   width: 50%;
   background-color: tomato;
 }
+
+.righttop{
+  height: 50%;
+  background-color: burlywood;
+}
+.rightbottom{
+  height: 50%;
+  background-color: violet;
+}

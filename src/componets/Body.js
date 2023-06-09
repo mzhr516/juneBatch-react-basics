@@ -1,8 +1,8 @@
 function Body() {
   return (
     <div className="body">
-      <LeftBody></LeftBody>
-      <RightBody></RightBody>
+      <LeftBody/>
+      <RightBody/>
     </div>
   );
 }
@@ -14,7 +14,20 @@ function LeftBody() {
 }
 
 function RightBody() {
-  return <div className="rightBody"></div>;
+  return <div className="rightBody">
+    <RightTop/>
+    <RightBottom/>
+  </div>;
+}
+
+function RightTop(){
+  return <div className="righttop">
+    {/* <TopRight/>
+    <TopLeft/> */}
+  </div>
+}
+function RightBottom(){
+  return <div className="rightbottom"></div>
 }
 
 

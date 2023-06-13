@@ -4,15 +4,16 @@ import { NavBar } from "./componets/Navbar";
 import Carasol from "./componets/Carasol";
 import Body from "./componets/Body";
 import Footer from "./componets/Footer";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <div className="mainContainer">
-      <h1>react tutorials...</h1>
       <NavBar />
       <Carasol />
       <Body />
       {Footer()}
+      <h1 className="h1 border border-dark">good evening....</h1>
     </div>
   );
 }

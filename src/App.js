@@ -7,19 +7,20 @@ import Footer from "./componets/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import BootstrapCarasol from "./componets/BootstrapCarasol";
 import Greeting from "./componets/Greeting";
+import { ReactProperties } from "./componets/Props";
 
 function App() {
   return (
     <div className="mainContainer">
-      <NavBar />
+      {/* <NavBar />
       <Carasol />
       <BootstrapCarasol />
       <Body />
       <div className="greeting">
         <Greeting />
       </div>
-      {Footer()}
-      <h1 className="h1 border border-dark">good evening....</h1>
+      {Footer()} */}
+      <ReactProperties/>
     </div>
   );
 }

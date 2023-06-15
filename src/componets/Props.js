@@ -2,6 +2,7 @@ import React from "react";
 import { Child1 } from "./Child1";
 import Greeting from "./Greeting";
 import { Child2 } from "./Child2";
+import { CityCard } from "./Card";
 
 export const ReactProperties = () => {
   return (
@@ -14,6 +15,23 @@ export const ReactProperties = () => {
       <Child2 num1={555} num2={200} bgColor="pink" txtColor="white" />
       <Child2 num1={559} num2={120} bgColor="yellow" txtColor="black" />
       <Child2 num1={585} num2={220} bgColor="white" txtColor="black" />
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <CityCard
+          pinCode={431605}
+          cityName="Nanded"
+          state="Mahartra"
+          src="img-3.jpg"
+        />
+        <CityCard
+          pinCode={503001}
+          cityName="hyderabad"
+          state="telangana"
+          src="img-1.jpg"
+        />
+        <CityCard cityName="mumbai" src="img-1.jpg" />
+        <CityCard cityName="kolkata" state="bjhmndc" />
+        <CityCard state="bengol" />
+      </div>
     </div>
   );
 };

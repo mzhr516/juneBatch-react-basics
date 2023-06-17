@@ -10,6 +10,7 @@ import Greeting from "./componets/Greeting";
 import { ReactProperties } from "./componets/Props";
 
 function App() {
+
   return (
     <div className="mainContainer">
       {/* <NavBar />
@@ -20,9 +21,15 @@ function App() {
         <Greeting />
       </div>
       {Footer()} */}
-      <ReactProperties/>
+      <ReactProperties />
     </div>
   );
 }
 
 export default App;
+
+
+
+
+
+

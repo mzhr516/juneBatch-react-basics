@@ -1,7 +1,12 @@
 import React from "react";
 import { Button, Card } from "react-bootstrap";
 
-export const CityCard = ({ cityName = "****", pinCode = "0000", state = "----", src = "img-2.jpg", }) => {
+export const CityCard = ({
+  cityName = "****",
+  pinCode = "0000",
+  state = "----",
+  src = "img-2.jpg",
+}) => {
   // console.log(props)
   // const {cityName,state,src}=props
   return (

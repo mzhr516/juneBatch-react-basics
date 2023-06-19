@@ -2,7 +2,6 @@ import React from "react";
 import { Table } from "react-bootstrap";
 
 export const UserTable = ({ userData }) => {
-  console.log(userData[1]);
   return (
     <div>
       <Table striped bordered hover>
@@ -17,7 +16,7 @@ export const UserTable = ({ userData }) => {
         </thead>
         <tbody>
           {userData.map((value, index) => (
-            <tr>
+            <tr key={index}>
               <td>{index + 1}</td>
               <td>{value.firstName}</td>
               <td>{value.lastName}</td>

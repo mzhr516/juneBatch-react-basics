@@ -4,65 +4,11 @@ import Greeting from "./Greeting";
 import { Child2 } from "./Child2";
 import { CityCard } from "./Card";
 import { UserTable } from "./table";
+import { MenuCards } from "./MenuCards";
+import { menus,unRagisterUserData,registerUserData } from "./constant";
 
 export const ReactProperties = () => {
-  const registerUserData = [
-    { firstName: "juned", lastName: "khan", location: "mumbai", age: 26 },
-    { firstName: "umed", lastName: "uddin", location: "mumbai", age: 28 },
-    { firstName: "aamer", lastName: "khan", location: "chennai", age: 30 },
-    { firstName: "mazz", lastName: "chaush", location: "kolkata", age: 35 },
-    {
-      firstName: "ahmed",
-      lastName: "mohiuddin",
-      location: "srinagar",
-      age: 40,
-    },
-
-    { firstName: "juned", lastName: "khan", location: "mumbai", age: 26 },
-    { firstName: "umed", lastName: "uddin", location: "mumbai", age: 28 },
-    { firstName: "aamer", lastName: "khan", location: "chennai", age: 30 },
-    { firstName: "mazz", lastName: "chaush", location: "kolkata", age: 35 },
-    {
-      firstName: "ahmed",
-      lastName: "mohiuddin",
-      location: "srinagar",
-      age: 40,
-    },{ firstName: "juned", lastName: "khan", location: "mumbai", age: 26 },
-    { firstName: "umed", lastName: "uddin", location: "mumbai", age: 28 },
-    { firstName: "aamer", lastName: "khan", location: "chennai", age: 30 },
-    { firstName: "mazz", lastName: "chaush", location: "kolkata", age: 35 },
-    {
-      firstName: "ahmed",
-      lastName: "mohiuddin",
-      location: "srinagar",
-      age: 40,
-    },
-    {
-      firstName: "ahmed",
-      lastName: "mohiuddin",
-      location: "srinagar",
-      age: 40,
-    },{ firstName: "juned", lastName: "khan", location: "mumbai", age: 26 },
-    { firstName: "umed", lastName: "uddin", location: "mumbai", age: 28 },
-    { firstName: "aamer", lastName: "khan", location: "chennai", age: 30 },
-    { firstName: "mazz", lastName: "chaush", location: "kolkata", age: 35 },
-    {
-      firstName: "ahmed",
-      lastName: "mohiuddin",
-      location: "srinagar",
-      age: 40,
-    },
-    
   
-  ];
-
-  const unRagisterUserData = [
-    { firstName: "mohammad", lastName: "khan", location: "mumbai", age: 26 },
-    { firstName: "uzer", lastName: "uddin", location: "mumbai", age: 28 },
-    { firstName: "khizer", lastName: "khan", location: "chennai", age: 30 },
-    { firstName: "soham", lastName: "gayakwad", location: "banglore", age: 25 },
-    { firstName: "madhav", lastName: "naidu", location: "jaipur", age: 23 },
-  ];
   return (
     <div>
       {/* <Child1 a="hello" b="good morning" c={100} />
@@ -89,12 +35,13 @@ export const ReactProperties = () => {
         <CityCard cityName="mumbai" src="img-1.jpg" />
         <CityCard cityName="kolkata" state="bjhmndc" />
         <CityCard state="bengol" /> */}
-        <div>
+        {/* <div>
           <h1>ragister user Table</h1>
         <UserTable userData={registerUserData} />
         <h1>un register user Table</h1>
         <UserTable userData={unRagisterUserData}/>
-        </div>
+        </div> */}
+        <MenuCards menu={menus}/>
       </div>
     // </div>
   );
